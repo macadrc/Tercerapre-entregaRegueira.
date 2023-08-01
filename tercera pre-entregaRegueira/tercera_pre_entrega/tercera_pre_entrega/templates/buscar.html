@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar en la BD{% endblock %}
+
+{% block content %}
+    <h1>Buscar en la BD</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+{% endblock %}

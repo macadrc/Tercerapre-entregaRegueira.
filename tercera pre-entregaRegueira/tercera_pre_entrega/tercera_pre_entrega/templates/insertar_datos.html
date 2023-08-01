@@ -1,0 +1,11 @@
+
+    <h1>Insertar Datos</h1>
+    <form method="post">
+        {% csrf_token %}
+        <h2>Producto</h2>
+        {{ producto_form.as_p }}
+        <h2>Cliente</h2>
+        {{ cliente_form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+

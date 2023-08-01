@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Bienvenido{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div>
+        <h1>Mi Proyecto Web Django</h1>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'insertar_datos' %}">Insertar Datos</a></li>
+            <li><a href="{% url 'buscar' %}">Buscar en la BD</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}
